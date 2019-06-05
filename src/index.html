@@ -4,57 +4,48 @@
     <meta charset="utf-8">
     <title>Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      
 
+    <p>
+    
+    <img id="minions"
+    src="https://i.pinimg.com/originals/62/14/2a/62142a150a15f3a3a3978de0df1225d7.gif">
+  
       
     </head>
     <body>
     <h1>JUEGA Y COMUNICATE EN SECRETO</h1>
-       <form>
+
+<!--rows es ancho para abajo-->
+<!--cols es largo a los lados-->
+<!--esto es donde escribe uno un mensaje-->
 
 
-        <div class="input">
-            <form id="form">
-                <input id="input" type="text" placeholder="Escribe tu mensaje secreto">
+<!--espacio sin ruptura-->
+<!--si no pongo id "shift no me da resultados al meter texto para codificar o lo contrario-->
 
-
-                <div class="buttons">
-                    <button type="submit" id="encrypt">Encriptar</button>
-                    <button id="decrypt">Descriptar</button>
+            <p id=Instruccion>Escribe tu mensaje </p>
+            <p> <textarea rows="2" cols="60" id="textoATraducir"></textarea></p>
+            <p> NUMEROS DE DESPLAZAMIENTOS &nbsp; <input type="number"  max=25 min=1   id= "shift"></p>
+            <p><input type="button" value="Cifrar" id="cifrado"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="Descifrar" id="descifrado"></p>
+            <br>
+            <br>
+            <p>R e s u l t a d o</p>
+            <p id= mostrarResultado></p>
+          
                 </div>
-
-                <div class="container">
-                  <div id="dado">
-                
-                  </div>
-                
-                  <button class="button" onClick="generarNumero()">Lanzar dado</button>
-                    </div>
-
                 
                 <div class="displaySpace">
                     <p id="displaySpace"> JUEGO INTERACTIVO </p>
                     <img src="media-file-150-icono-edad-5.jpg">
                 </img>
 
-
+               
                 </div>
             </section>
         
 
             </form>
         </div>
-
-
-
-
-
-
-     
-      
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
