@@ -29,8 +29,7 @@ body{
 .displaySpace{
     margin:100px auto;
     text-align: center;
-    
-    
+   
 }
 img {
 
@@ -59,4 +58,21 @@ img {
 
 body{
     background: yellow;
+}
+
+table {
+
+    
+    margin:auto;
+}
+
+
+div {
+    display: block;
+}
+
+button
+
+{
+    margin: 0px;
 }
