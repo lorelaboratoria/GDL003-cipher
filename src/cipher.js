@@ -28,7 +28,12 @@ function encode() {
     else result += m.charAt(i); // traspaso de caracteres no incluidos en los rangos anteriores
     document.getElementById("mostrarResultado").innerHTML = result; // impresion del resultado en el html
   }
-}
+}   
+
+
+
+
+
 
 // funcion de descifrado//
 function decode() {
@@ -48,7 +53,7 @@ function decode() {
     document.getElementById("mostrarResultado").innerHTML = result; // impresion del resultado en el html
   }
 }
-
+ 
 
 var dado = document.getElementById('dado');
 
