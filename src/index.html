@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="style.css" />
 
     <p>
-    
+    <br>
+    <br>
+
     <img id="minions"
     src="https://i.pinimg.com/originals/62/14/2a/62142a150a15f3a3a3978de0df1225d7.gif">
   
@@ -16,6 +18,33 @@
 
     <h1>JUEGA Y COMUNICATE EN SECRETO</h1>
 
+    <div id ="primeraPagina">
+      <br>
+      <br>
+      <br>
+      
+      <h3>Material que deberas reunir</h3>
+       <p>Papel, Pluma, un dado, cronometro y por supuesto uno o mas amigo con quien jugar... </p> 
+      
+      
+       <h4>Instruciones</h4>
+       <p>Deberas escribir un MENSAJE SECRETO en el papel</p>
+       <p>Tu Amigo o amigos deberan codificar el mensaje secreto en un minuto</p>
+       <p>si alguien se equivoca o no alcanzo a codificar el mensaje deberan cumplir castigos de quien escribio el mensaje</p>
+       <p>
+      
+      <br>
+      <H4>ADVERTENCIA</h4>
+        <p>Los castigos que se proporcionen deberan ser bajo su propia responsabilidad sin ponerse en riesgo</p>
+      
+      
+      </form>
+      
+      <input type="button" value="Adelante" id="avanzarPagina"onclick="pasarPagina"> 
+   
+      
+      </div>
+
 <!--rows es ancho para abajo-->
 <!--cols es largo a los lados-->
 <!--esto es donde escribe uno un mensaje-->
@@ -24,45 +53,12 @@
 <!--espacio sin ruptura-->
 <!--si no pongo id "shift no me da resultados al meter texto para codificar o lo contrario-->
 
-<section id="terceraPagina">
-
-          <p id=Instruccion>Escribe tu mensaje </p>
-            <p> <textarea rows="2" cols="70" id="textoATraducir"></textarea></p>
-            <p> Numero del Dado &nbsp; <input type="number"  max=6 min=1   id= "shift"></p>
-            <p><input type="button" value="Cifrar" id="cifrado"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="Descifrar" id="descifrado"></p>
-            <br>
-            <br>
-            <p>R e s u l t a d o</p>
-            <p id= mostrarResultado></p>
-          
-                </div>
-                
-                <div class="displaySpace">
-                    <p id="displaySpace"> JUEGO INTERACTIVO </p>
-                    <img src="media-file-150-icono-edad-5.jpg">
-                </img>
-
-               
-                </div>
-            </section>
-            <class="container">
-              <div id="dado">
-            
-              </div>
-            
-              <button class="button" onClick="generarNumero()">Lanzar dado</button>
-                </div>
-
-<input type="button" value="Adelante" id="avanzarPagina">
-<input type="button" value="Atras" id="atrasarPagina">
-
-              </section>
 
 <br>
 <br>
 <br>
 
-                  <section id ="primeraPagina">
+                  <div id ="segundaPagina">
                     
 
 
@@ -454,42 +450,46 @@
           </tr>
 </table>
 
+<input type="button" value="Atras" id="atrasarPagina" onclick="atrasPagina">
 
-<input type="button" value="Adelante" id="avanzarPagina">
-<input type="button" value="Atras" id="atrasarPagina">
+<input type="button" value="Adelante" id="avanzarPagina" onclick="pasarPagina">
 
-</section>
+</div>
 
+<div id ="terceraPagina">
 
-<section id ="segundaPagina">
-<br>
-<br>
-<br>
-
-<h3>Material que deberas reunir</h3>
- <p>Papel, Pluma, un dado, cronometro y por supuesto uno o mas amigo con quien jugar... </p> 
-
-
- <h4>Instruciones</h4>
- <p>Deberas escribir un MENSAJE SECRETO en el papel</p>
- <p>Tu Amigo o amigos deberan codificar el mensaje secreto en un minuto</p>
- <p>si alguien se equivoca o no alcanzo a codificar el mensaje deberan cumplir castigos de quien escribio el mensaje</p>
- <p>
-
-<br>
-<H4>ADVERTENCIA</h4>
-  <p>Los castigos que se proporcionen deberan ser bajo su propia responsabilidad sin ponerse en riesgo</p>
-
-
-</form>
-
-<input type="button" value="Adelante" id="avanzarPagina">
-<input type="button" value="Atras" id="atrasarPagina">
-
-</section>
-
+  <p id=Instruccion>Escribe tu mensaje </p>
+    <p> <textarea rows="2" cols="70" id="textoATraducir"></textarea></p>
+    <p> Numero del Dado &nbsp; <input type="number"  max=6 min=1   id= "shift"></p>
+    <p><input type="button" value="Cifrar" id="cifrado"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="Descifrar" id="descifrado"></p>
+    <br>
+    <br>
+    <p>R e s u l t a d o</p>
+    <p id= mostrarResultado></p>
+ 
+        </div>
+        
+        <div class="displaySpace">
+            <p id="displaySpace"> JUEGO INTERACTIVO </p>
+            <img src="media-file-150-icono-edad-5.jpg">
+        </img>
 
        
+        </div>
+    
+    <class="container">
+      <div id="dado">
+    
+      </div>
+    
+      <button class="button" onClick="generarNumero()">Lanzar dado</button>
+        </div>
+
+        <input type="button" value="Atras" id="atrasarPagina" onclick="atrasPagina">
+     
+
+      </div>
+
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
